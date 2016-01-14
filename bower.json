@@ -1,0 +1,18 @@
+{
+  "name": "brower-asyn-project-tpl",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cexoso <285516193@qq.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
