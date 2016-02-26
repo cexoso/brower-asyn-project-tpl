@@ -1,0 +1,77 @@
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+            transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+    will-change: transform; }
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(-180deg) rotateZ(-270deg);
+            transform: rotateX(0deg) rotateY(-180deg) rotateZ(-270deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+            transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+    will-change: transform; }
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(-180deg) rotateZ(-270deg);
+            transform: rotateX(0deg) rotateY(-180deg) rotateZ(-270deg); } }
+
+.platform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%; }
+  .platform .container {
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotate 5s linear 0s infinite normal;
+            animation: rotate 5s linear 0s infinite normal;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+    .platform .container .m {
+      -webkit-text-stroke: 1px #333;
+      text-align: center;
+      line-height: 100px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 800;
+      background-color: #fff;
+      box-shadow: 0 0 30px rgba(125, 125, 125, 0.8) inset;
+      position: absolute; }
+    .platform .container .up {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: rotateX(90deg) translateZ(50px);
+              transform: rotateX(90deg) translateZ(50px); }
+    .platform .container .down {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: rotateX(-90deg) translateZ(50px);
+              transform: rotateX(-90deg) translateZ(50px); }
+    .platform .container .left {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: rotateY(-90deg) translateZ(50px);
+              transform: rotateY(-90deg) translateZ(50px); }
+    .platform .container .right {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: rotateY(90deg) translateZ(50px);
+              transform: rotateY(90deg) translateZ(50px); }
+    .platform .container .pre {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px); }
+    .platform .container .aft {
+      height: 100px;
+      width: 100px;
+      -webkit-transform: translateZ(-50px);
+              transform: translateZ(-50px); }

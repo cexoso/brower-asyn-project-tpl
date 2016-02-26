@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "latest"
+    "gulp": "latest",
+    "gulp-sass":"latest",
+    "browser-sync":"latest",
+    "chokidar":"latest",
+    "gulp-autoprefixer":"latest"
   },
   "dependencies": {
     "jquery": "latest"
