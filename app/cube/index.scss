@@ -1,11 +1,11 @@
-$percent:100px;
+$percent:800px;
 @keyframes rotate {
   0% {
-    transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     will-change: transform;
   }
   100% {
-    transform: rotateX(0deg) rotateY(-180deg) rotateZ(-270deg);
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
   }
 }
 .platform {
@@ -13,7 +13,7 @@ $percent:100px;
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
-  perspective: 800px;
+  perspective: 400px;
   perspective-origin: 50% 50%;
   .container {
     width:$percent;
@@ -35,35 +35,40 @@ $percent:100px;
     }
     .up {
       height: $percent;
-      // background-color: red;
+      background-color: rgba(125,10,10,0.5);
       width: $percent;
       transform: rotateX(90deg) translateZ($percent/2);
     }
     .down {
       height: $percent;
       width: $percent;
+      background-color: rgba(125,10,200,0.5);
       transform: rotateX(-90deg) translateZ($percent/2);
     }
     .left {
       height: $percent;
       width: $percent;
+      background-color: rgba(25,200,10,0.5);
       transform: rotateY(-90deg) translateZ($percent/2);
     }
     .right {
       height: $percent;
       width: $percent;
+      background-color: rgba(125,10,120,0.5);
       transform: rotateY(90deg) translateZ($percent/2);
     }
     .pre {
 
       height: $percent;
       width: $percent;
+      background-color: rgba(10,120,10,0.5);
       transform: translateZ($percent/2);
     }
     .aft {
       height: $percent;
       width: $percent;
-      transform: translateZ(-50px);
+      background-color: rgba(125,120,10,0.5);
+      transform: translateZ(- $percent/2);
     }
   }
 }
